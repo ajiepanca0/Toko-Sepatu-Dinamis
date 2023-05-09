@@ -1,7 +1,7 @@
 <html>
   <head>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header>
@@ -31,7 +31,21 @@
             <a href="#" class="btn">add to card</a>
           </div>
           <div class="image">
-            <img src="img/slide/1.png" class="shoe" />
+            <img src="assets/img/slide/1.png" class="shoe" />
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-container">
+        <div class="slide">
+          <div class="content">
+            <span>Nike Sport Shoes</span>
+            <h3>Nike Metcon Shoes</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta sit iure neque voluptate.</p>
+            <a href="#" class="btn">add to card</a>
+          </div>
+          <div class="image">
+            <img src="assets/img/slide/2.png" class="shoe" />
           </div>
         </div>
       </div>
@@ -44,7 +58,7 @@
             <a href="#" class="btn">add to card</a>
           </div>
           <div class="image">
-            <img src="img/slide/2.png" class="shoe" />
+            <img src="assets/img/slide/3.png" class="shoe" />
           </div>
         </div>
       </div>
@@ -57,20 +71,7 @@
             <a href="#" class="btn">add to card</a>
           </div>
           <div class="image">
-            <img src="img/slide/3.png" class="shoe" />
-          </div>
-        </div>
-      </div>
-      <div class="slide-container">
-        <div class="slide">
-          <div class="content">
-            <span>Nike Sport Shoes</span>
-            <h3>Nike Metcon Shoes</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta sit iure neque voluptate.</p>
-            <a href="#" class="btn">add to card</a>
-          </div>
-          <div class="image">
-            <img src="img/slide/4.png" class="shoe" />
+            <img src="assets/img/slide/4.png" class="shoe" />
           </div>
         </div>
       </div>
@@ -89,7 +90,7 @@
             <a href="#" class="fa fa-eye"></a>
           </div>
           <div class="content">
-            <img src="img/product4/1.jpg" alt="" />
+            <img src="assets/img/product4/1.jpg" alt="" />
             <h3>Nike Shoes</h3>
             <div class="price">$200 <span>$150</span></div>
             <div class="stars">
@@ -108,7 +109,7 @@
             <a href="#" class="fa fa-eye"></a>
           </div>
           <div class="content">
-            <img src="img/product4/2.jpg" alt="" />
+            <img src="assets/img/product4/2.jpg" alt="" />
             <h3>Nike Shoes</h3>
             <div class="price">$200 <span>$150</span></div>
             <div class="stars">
@@ -127,7 +128,7 @@
             <a href="#" class="fa fa-eye"></a>
           </div>
           <div class="content">
-            <img src="img/product4/3.jpg" alt="" />
+            <img src="assets/img/product4/3.jpg" alt="" />
             <h3>Nike Shoes</h3>
             <div class="price">$200 <span>$150</span></div>
             <div class="stars">
@@ -146,7 +147,7 @@
             <a href="#" class="fa fa-eye"></a>
           </div>
           <div class="content">
-            <img src="img/product4/5.jpg" alt="" />
+            <img src="assets/img/product4/5.jpg" alt="" />
             <h3>Nike Shoes</h3>
             <div class="price">$200 <span>$150</span></div>
             <div class="stars">
@@ -165,7 +166,7 @@
             <a href="#" class="fa fa-eye"></a>
           </div>
           <div class="content">
-            <img src="img/product4/7.png" alt="" />
+            <img src="assets/img/product4/7.png" alt="" />
             <h3>Nike Shoes</h3>
             <div class="price">$200 <span>$150</span></div>
             <div class="stars">
@@ -184,7 +185,7 @@
             <a href="#" class="fa fa-eye"></a>
           </div>
           <div class="content">
-            <img src="img/product4/8.png" alt="" />
+            <img src="assets/img/product4/8.png" alt="" />
             <h3>Nike Shoes</h3>
             <div class="price">$200 <span>$150</span></div>
             <div class="stars">
@@ -204,13 +205,13 @@
       <div class="row">
         <div class="image-container">
           <div class="small-image">
-            <img src="img/product1/1.jpg" alt="" class="featured-image-1" />
-            <img src="img/product1/2.jpg" alt="" class="featured-image-1" />
-            <img src="img/product1/3.jpg" alt="" class="featured-image-1" />
-            <img src="img/product1/4.jpg" alt="" class="featured-image-1" />
+            <img src="assets/img/product1/1.jpg" alt="" class="featured-image-1" />
+            <img src="assets/img/product1/2.jpg" alt="" class="featured-image-1" />
+            <img src="assets/img/product1/3.jpg" alt="" class="featured-image-1" />
+            <img src="assets/img/product1/4.jpg" alt="" class="featured-image-1" />
           </div>
           <div class="big-image">
-            <img src="img/product1/1.jpg" alt="" class="big-image-1" />
+            <img src="assets/img/product1/1.jpg" alt="" class="big-image-1" />
           </div>
         </div>
         <div class="content">
@@ -230,13 +231,13 @@
       <div class="row">
         <div class="image-container">
           <div class="small-image">
-            <img src="img/product2/1.jpg" alt="" class="featured-image-2" />
-            <img src="img/product2/2.jpg" alt="" class="featured-image-2" />
-            <img src="img/product2/3.jpg" alt="" class="featured-image-2" />
-            <img src="img/product2/4.jpg" alt="" class="featured-image-2" />
+            <img src="assets/img/product2/1.jpg" alt="" class="featured-image-2" />
+            <img src="assets/img/product2/2.jpg" alt="" class="featured-image-2" />
+            <img src="assets/img/product2/3.jpg" alt="" class="featured-image-2" />
+            <img src="assets/img/product2/4.jpg" alt="" class="featured-image-2" />
           </div>
           <div class="big-image">
-            <img src="img/product2/1.jpg" alt="" class="big-image-2" />
+            <img src="assets/img/product2/1.jpg" alt="" class="big-image-2" />
           </div>
         </div>
         <div class="content">
@@ -256,13 +257,13 @@
       <div class="row">
         <div class="image-container">
           <div class="small-image">
-            <img src="img/product3/1.jpg" alt="" class="featured-image-3" />
-            <img src="img/product3/2.jpg" alt="" class="featured-image-3" />
-            <img src="img/product3/3.jpg" alt="" class="featured-image-3" />
-            <img src="img/product3/4.jpg" alt="" class="featured-image-3" />
+            <img src="assets/img/product3/1.jpg" alt="" class="featured-image-3" />
+            <img src="assets/img/product3/2.jpg" alt="" class="featured-image-3" />
+            <img src="assets/img/product3/3.jpg" alt="" class="featured-image-3" />
+            <img src="assets/img/product3/4.jpg" alt="" class="featured-image-3" />
           </div>
           <div class="big-image">
-            <img src="img/product3/1.jpg" alt="" class="big-image-3" />
+            <img src="assets/img/product3/1.jpg" alt="" class="big-image-3" />
           </div>
         </div>
         <div class="content">
@@ -285,7 +286,7 @@
       <h1 class="heading">Team <span>Weblog</span></h1>
       <div class="box-container">
         <div class="box">
-          <img src="img/team/1.png" alt="" />
+          <img src="assets/img/team/1.png" alt="" />
           <h3>Zahra Ahmadi</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sequi temporibus impedit corporis vero ab exercitationem dolore voluptatibus, nisi non.</p>
           <div class="stars">
@@ -297,7 +298,7 @@
           </div>
         </div>
         <div class="box">
-          <img src="img/team/2.png" alt="" />
+          <img src="assets/img/team/2.png" alt="" />
           <h3>Maryam Nazari</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sequi temporibus impedit corporis vero ab exercitationem dolore voluptatibus, nisi non.</p>
           <div class="stars">
@@ -309,7 +310,7 @@
           </div>
         </div>
         <div class="box">
-          <img src="img/team/3.png" alt="" />
+          <img src="assets/img/team/3.png" alt="" />
           <h3>Layla Akbari</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sequi temporibus impedit corporis vero ab exercitationem dolore voluptatibus, nisi non.</p>
           <div class="stars">
@@ -342,4 +343,4 @@
   </body>
 </html>
 
-<script src="js/script.js"></script>
+<script src="assets/js/script.js"></script>
