@@ -8,7 +8,7 @@ Data Service
 @section('content')
 
 <div class="container">
-        <a href="/admin/services" class="btn btn-primary mb-3">Kembali</a>
+        <a href="/services" class="btn btn-primary mb-3">Kembali</a>
        {{-- saat tombol kembali dipencet maka akan kembali ke link /service keluar dari /service/create --}}
     <div class="row">
         <div class="col-md-12">
@@ -54,6 +54,14 @@ Data Service
                 <textarea name="price" id="" cols="30" rows="10" class="form-control" placeholder="price">{{$service->price}}</textarea>
             </div>
             @error('price')
+            <small style="color:red">{{$message}}</small>
+            {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
+        @enderror
+            <div class="form-group">
+                <label for="">Price 2</label>
+                <textarea name="price_2" id="" cols="30" rows="10" class="form-control" placeholder="price">{{$service->price_2}}</textarea>
+            </div>
+            @error('price_2')
             <small style="color:red">{{$message}}</small>
             {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
         @enderror

@@ -22,21 +22,29 @@
     </header>
     <!--end header-->
     <section class="home" id="home">
-      <div class="slide-container active">
+      @foreach ($sliders as $index=>$slider)
+          
+    
+      <div class="slide-container {{$index=== 0 ? 'active' : ''}}">
         <div class="slide">
           <div class="content">
-            <span>Nike Sport Shoes</span>
-            <h3>Nike Metcon Shoes</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta sit iure neque voluptate.</p>
-            <a href="#" class="btn">add to card</a>
+            <span>{{$slider->title}}</span>
+            <h3>{{$slider->description}}</h3>
+            <p>{{$slider->detail}}</p>
+            <div class="price">{{$slider->price}} <span> {{$slider->price_2}}</span></div>
+            
+            {{-- <a href="#" class="btn">add to card</a> --}}
+            <a href="{{ route('sliders.edit', $slider->id) }}" class="btn">add to card</a>
+
           </div>
           <div class="image">
-            <img src="assets/img/slide/1.png" class="shoe" />
+            <img src="image/{{$slider->image}}" class="shoe" />
+            
           </div>
         </div>
       </div>
-
-      <div class="slide-container">
+    
+      {{-- <div class="slide-container">
         <div class="slide">
           <div class="content">
             <span>Nike Sport Shoes</span>
@@ -74,15 +82,19 @@
             <img src="assets/img/slide/4.png" class="shoe" />
           </div>
         </div>
-      </div>
+      </div> --}}
 
       <div id="prev" class="fa fa-angle-left" onclick="prev();"></div>
       <div id="next" class="fa fa-angle-right" onclick="next();"></div>
+      @endforeach
     </section>
     <!--end home-->
     <section class="product" id="product">
       <h1 class="heading">latest <span>Products</span></h1>
       <div class="box-container">
+        @foreach ($services as $index=>$service)
+                
+        
         <div class="box">
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
@@ -90,9 +102,11 @@
             <a href="#" class="fa fa-eye"></a>
           </div>
           <div class="content">
-            <img src="assets/img/product4/1.jpg" alt="" />
-            <h3>Nike Shoes</h3>
-            <div class="price">$200 <span>$150</span></div>
+            <img src="image/{{$service->image}}" alt="" />
+            <h2>{{$service->title}}</h2>
+            <h3>{{$service->description}}</h3>
+            <h4>{{$service->detail}}</h4>
+            <div class="price">{{$service->price}} <span> {{$service->price_2}}</span></div>
             <div class="stars">
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
@@ -102,13 +116,14 @@
             </div>
           </div>
         </div>
-        <div class="box">
+        @endforeach
+        {{-- <div class="box"> --}}
           <div class="icons">
             <a href="#" class="fa fa-heart"></a>
             <a href="#" class="fa fa-share"></a>
             <a href="#" class="fa fa-eye"></a>
           </div>
-          <div class="content">
+          {{-- <div class="content">
             <img src="assets/img/product4/2.jpg" alt="" />
             <h3>Nike Shoes</h3>
             <div class="price">$200 <span>$150</span></div>
@@ -185,6 +200,7 @@
             <a href="#" class="fa fa-eye"></a>
           </div>
           <div class="content">
+           
             <img src="assets/img/product4/8.png" alt="" />
             <h3>Nike Shoes</h3>
             <div class="price">$200 <span>$150</span></div>
@@ -196,26 +212,31 @@
               <i class="fa fa-star"></i>
             </div>
           </div>
-        </div>
+        </div> --}}
       </div>
     </section>
     <!--end product-->
     <section class="featured" id="fearured">
       <h1 class="heading">New <span>Product</span></h1>
       <div class="row">
+        @foreach ($testimonials as $index=>$testimonial)
+            
+       
         <div class="image-container">
           <div class="small-image">
-            <img src="assets/img/product1/1.jpg" alt="" class="featured-image-1" />
-            <img src="assets/img/product1/2.jpg" alt="" class="featured-image-1" />
-            <img src="assets/img/product1/3.jpg" alt="" class="featured-image-1" />
-            <img src="assets/img/product1/4.jpg" alt="" class="featured-image-1" />
+            <img src="image/{{$testimonial->image_2}}" alt="" class="featured-image-1" />
+            <img src="image/{{$testimonial->image_3}}" alt="" class="featured-image-1" />
+            <img src="image/{{$testimonial->image_4}}" alt="" class="featured-image-1" />
+            <img src="image/{{$testimonial->image_5}}" alt="" class="featured-image-1" />
           </div>
           <div class="big-image">
-            <img src="assets/img/product1/1.jpg" alt="" class="big-image-1" />
+            <img src="image/{{$testimonial->image}}" alt="" class="big-image-1" />
           </div>
         </div>
         <div class="content">
-          <h3>new nike airmac shoes</h3>
+          <h2>{{$testimonial->title}}</h2>
+          <h3>{{$testimonial->description}}</h3>
+          
           <div class="stars">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -223,12 +244,13 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?</p>
-          <div class="price">$90 <span>$120</span></div>
+          <p>{{$testimonial->detail}}</p>
+          <div class="price">{{$testimonial->price}}<span> {{$testimonial->price_2}}</span></div>
           <a href="#" class="btn">add to cart</a>
         </div>
+        @endforeach
       </div>
-      <div class="row">
+      {{-- <div class="row">
         <div class="image-container">
           <div class="small-image">
             <img src="assets/img/product2/1.jpg" alt="" class="featured-image-2" />
@@ -279,7 +301,7 @@
           <div class="price">$90 <span>$120</span></div>
           <a href="#" class="btn">add to cart</a>
         </div>
-      </div>
+      </div> --}}
     </section>
     <!--end featured-->
     <section class="blog" id="blog">

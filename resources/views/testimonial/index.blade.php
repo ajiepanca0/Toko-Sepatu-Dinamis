@@ -27,7 +27,12 @@
                     <th>Deskripsi</th>
                     <th>Detail</th>
                     <th>Gambar</th>
+                    <th>Gambar 2</th>
+                    <th>Gambar 3</th>
+                    <th>Gambar 4</th>
+                    <th>Gambar 5</th>
                     <th>Price</th>
+                    <th>Price 2</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -44,7 +49,20 @@
                     <td>
                         <img src="/image/{{ $testimonial->image }}" alt="" class="img-fluid" width="90">
                     </td>
+                    <td>
+                        <img src="/image/{{ $testimonial->image_2 }}" alt="" class="img-fluid" width="90">
+                    </td>
+                    <td>
+                        <img src="/image/{{ $testimonial->image_3 }}" alt="" class="img-fluid" width="90">
+                    </td>
+                    <td>
+                        <img src="/image/{{ $testimonial->image_4 }}" alt="" class="img-fluid" width="90">
+                    </td>
+                    <td>
+                        <img src="/image/{{ $testimonial->image_5 }}" alt="" class="img-fluid" width="90">
+                    </td>
                     <td>{{ $testimonial->price  }}</td>
+                    <td>{{ $testimonial->price_2  }}</td>
                     <td>
                         <a href="{{ route('testimonials.edit', $testimonial->id) }}" class="btn btn-warning">Edit</a>
                         

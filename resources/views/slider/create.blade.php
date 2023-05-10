@@ -55,6 +55,14 @@ Data Slider
                 <small style="color:red">{{$message}}</small>
                 {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
             @enderror
+            <div class="form-group">
+                <label for="">Price 2</label>
+                <input type="text" class="form-control" name="price_2" placeholder="price">
+            </div>
+            @error('price_2')
+                <small style="color:red">{{$message}}</small>
+                {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
+            @enderror
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </div>

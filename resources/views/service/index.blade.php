@@ -28,6 +28,7 @@
                     <th>Detail</th>
                     <th>Gambar</th>
                     <th>Price</th>
+                    <th>Price 2</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -45,6 +46,7 @@
                         <img src="/image/{{ $service->image }}" alt="" class="img-fluid" width="90">
                     </td>
                     <td>{{ $service->price  }}</td>
+                    <td>{{ $service->price_2  }}</td>
                     <td>
                         <a href="{{ route('services.edit', $service->id) }}" class="btn btn-warning">Edit</a>
                         

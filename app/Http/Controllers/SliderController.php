@@ -48,6 +48,7 @@ class SliderController extends Controller
             'detail'=>'required',
             'image'=>'image',
             'price'=>'required',
+            'price_2'=>'required',
        ]);
        $input = $request->all();
        // setelah masuk ke store akan di req untuk di validasi terlebih dahulu setelah itu akan 
@@ -94,6 +95,7 @@ class SliderController extends Controller
     public function edit(Slider $slider)
     {
 
+        dd($slider);
 
         return view('slider.edit', compact('slider'));
     }
@@ -113,6 +115,7 @@ class SliderController extends Controller
             'detail'=>'required',
             'image'=>'image',
             'price'=>'required',
+            'price_2'=>'required',
            ]);
            $input = $request->all();
            // setelah masuk ke store akan di req untuk di validasi terlebih dahulu setelah itu akan 

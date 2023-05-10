@@ -48,6 +48,7 @@ class ServiceController extends Controller
             'detail'=>'required',
             'image'=>'image',
             'price'=>'required',
+            'price_2'=>'required',
        ]);
        $input = $request->all();
        // setelah masuk ke store akan di req untuk di validasi terlebih dahulu setelah itu akan 
@@ -113,6 +114,7 @@ class ServiceController extends Controller
             'detail'=>'required',
             'image'=>'image',
             'price'=>'required',
+            'price_2'=>'required',
            ]);
            $input = $request->all();
            // setelah masuk ke store akan di req untuk di validasi terlebih dahulu setelah itu akan 

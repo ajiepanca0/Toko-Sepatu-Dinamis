@@ -28,6 +28,7 @@
                     <th>Detail</th>
                     <th>Gambar</th>
                     <th>Price</th>
+                    <th>Price 2</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -45,6 +46,7 @@
                         <img src="/image/{{ $slider->image }}" alt="" class="img-fluid" width="90">
                     </td>
                     <td>{{ $slider->price  }}</td>
+                    <td>{{ $slider->price_2  }}</td>
                     <td>
                         <a href="{{ route('sliders.edit', $slider->id) }}" class="btn btn-warning">Edit</a>
                         

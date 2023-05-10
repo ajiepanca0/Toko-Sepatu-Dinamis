@@ -47,11 +47,51 @@ Data Testimonial
                 <small style="color:red">{{$message}}</small>
                 {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
             @enderror
+                <div class="form-group">
+                    <label for="">Gambar 2</label>
+                    <input type="file" class="form-control" name="image_2" >
+                </div>
+                @error('image_2')
+                <small style="color:red">{{$message}}</small>
+                {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
+            @enderror
+                <div class="form-group">
+                    <label for="">Gambar 3</label>
+                    <input type="file" class="form-control" name="image_3" >
+                </div>
+                @error('image_3')
+                <small style="color:red">{{$message}}</small>
+                {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
+            @enderror
+                <div class="form-group">
+                    <label for="">Gambar 4</label>
+                    <input type="file" class="form-control" name="image_4" >
+                </div>
+                @error('image_4')
+                <small style="color:red">{{$message}}</small>
+                {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
+            @enderror
+                <div class="form-group">
+                    <label for="">Gambar 5</label>
+                    <input type="file" class="form-control" name="image_5" >
+                </div>
+                @error('image_5')
+                <small style="color:red">{{$message}}</small>
+                {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
+            @enderror
             <div class="form-group">
                 <label for="">Price</label>
                 <input type="text" class="form-control" name="price" placeholder="price">
             </div>
             @error('price')
+                <small style="color:red">{{$message}}</small>
+                {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
+            @enderror
+            <div class="form-group">
+                <label for="">Price 2</label>
+                <input type="text" class="form-control" name="price_2" placeholder="price">
+            </div>
+            @error('price_2')
                 <small style="color:red">{{$message}}</small>
                 {{-- untuk menampilkan error dengan title lalu message yg sudah disiapkan --}}
             @enderror

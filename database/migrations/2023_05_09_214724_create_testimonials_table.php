@@ -19,7 +19,12 @@ return new class extends Migration
             $table->string('description');
             $table->string('detail');
             $table->string('image');
+            $table->string('image_2');
+            $table->string('image_3');
+            $table->string('image_4');
+            $table->string('image_5');
             $table->integer('price');
+            $table->integer('price_2');
             $table->timestamps();
         });
     }
