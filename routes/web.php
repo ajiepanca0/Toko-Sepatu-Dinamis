@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ServiceController;
@@ -29,6 +30,10 @@ Route::get('/',[HomeController::class, 'index']); // untuk memanggil class index
 Route::get('/login',[AuthController::class, 'login'])->name('login');
 Route::post('/login',[AuthController::class, 'authenticated']);
 Route::get('/logout',[AuthController::class, 'logout']);
+
+
+Route::get('/carts', [CartController::class, 'index'])->name('carts.index');
+
 
 //dashboard
 Route::get('/dashboard',[DashboardController::class, 'index'])->middleware('auth');

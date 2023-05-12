@@ -16,7 +16,7 @@
       </nav>
       <div class="icons">
         <a href="#"><i class="fa fa-heart"></i></a>
-        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        <a href="{{ route('carts.index') }}"><i  class="fa fa-shopping-cart" ></i></a>
         <a href="#"><i class="fa fa-user"></i></a>
       </div>
     </header>
@@ -34,7 +34,9 @@
             <div class="price">{{$slider->price}} <span> {{$slider->price_2}}</span></div>
             
             {{-- <a href="#" class="btn">add to card</a> --}}
-            <a href="{{ route('sliders.edit', $slider->id) }}" class="btn">add to card</a>
+            {{-- <a href="{{ route('carts.index', $slider->id) }}" class="btn">add to card</a> --}}
+            <a href="{{ route('carts.index') }}">Go to Cart</a>
+
 
           </div>
           <div class="image">
